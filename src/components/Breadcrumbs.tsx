@@ -19,7 +19,7 @@ export default function Breadcrumbs({ items, ariaLabel }: BreadcrumbsProps) {
   }));
 
   return (
-    <nav aria-label={ariaLabel ?? "Breadcrumb"} className="py-3">
+    <nav aria-label={ariaLabel ?? "Breadcrumb"} className="px-4 py-3 max-w-7xl mx-auto">
       <JsonLd data={generateBreadcrumbJsonLd(jsonLdItems)} />
       <ol
         className="flex items-center gap-1.5 text-sm text-neutral-500"
