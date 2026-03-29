@@ -266,5 +266,15 @@
   "whatsapp": {
     "chatMessage": "Dobrý den! Mám zájem o vaše luxusní pronájmy na Tenerife.",
     "ariaLabel": "Napište nám přes WhatsApp"
+  },
+  "calendar": {
+    "title": "Dostupnost",
+    "available": "Volné",
+    "booked": "Obsazeno",
+    "today": "Dnes",
+    "prevMonth": "Předchozí měsíc",
+    "nextMonth": "Následující měsíc",
+    "monthNames": ["Leden", "Únor", "Březen", "Duben", "Květen", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"],
+    "dayNamesShort": ["Po", "Út", "St", "Čt", "Pá", "So", "Ne"]
   }
 }

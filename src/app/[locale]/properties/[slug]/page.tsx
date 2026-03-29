@@ -9,6 +9,7 @@ import { generatePropertyJsonLd } from "@/lib/seo";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { getDictionary } from "@/lib/dictionary";
 import { type Locale, locales } from "@/lib/i18n";
+import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import Link from "next/link";
 
 // Map English amenity strings to dictionary keys
@@ -513,6 +514,12 @@ export default async function PropertyPage({
                     {pl.directFromOwner} &bull; {pl.noBookingFees}
                   </p>
                 </div>
+
+                {/* Availability Calendar */}
+                <AvailabilityCalendar
+                  bookings={property.bookings}
+                  dict={dict.calendar}
+                />
 
                 {/* Quick Facts */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">

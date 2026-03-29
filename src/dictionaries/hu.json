@@ -266,5 +266,15 @@
   "whatsapp": {
     "chatMessage": "Üdvözlöm! Érdekelnek a tenerifei luxus bérleményeik.",
     "ariaLabel": "Csevegjen velünk WhatsApp-on"
+  },
+  "calendar": {
+    "title": "Elérhetőség",
+    "available": "Szabad",
+    "booked": "Foglalt",
+    "today": "Ma",
+    "prevMonth": "Előző hónap",
+    "nextMonth": "Következő hónap",
+    "monthNames": ["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"],
+    "dayNamesShort": ["Hé", "Ke", "Sze", "Cs", "Pé", "Szo", "Va"]
   }
 }

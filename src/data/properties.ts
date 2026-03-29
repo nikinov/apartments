@@ -108,6 +108,9 @@ export const properties: Property[] = [
       whatsapp: "34644849648",
       email: "contact@tenerife-rentals.com",
     },
+    bookings: [
+      { startDate: "2026-04-15", endDate: "2026-04-21" },
+    ],
     rating: 4.9,
     reviewCount: 47,
     available: true,

@@ -35,6 +35,13 @@ export default async function HomePage({
 
       <Hero dict={dict} locale={locale} />
 
+      {/* Navy-to-white transition from hero */}
+      <div
+        className="h-24 -mt-1"
+        style={{ background: "linear-gradient(to bottom, var(--color-navy) 0%, white 100%)" }}
+        aria-hidden="true"
+      />
+
       {/* Featured Properties */}
       <section className="py-20 px-4 bg-white" id="properties">
         <div className="max-w-7xl mx-auto">

@@ -266,5 +266,15 @@
   "whatsapp": {
     "chatMessage": "Cześć! Jestem zainteresowany/a Waszymi luksusowymi ofertami wynajmu na Teneryfie.",
     "ariaLabel": "Napisz do nas na WhatsApp"
+  },
+  "calendar": {
+    "title": "Dostępność",
+    "available": "Dostępne",
+    "booked": "Zarezerwowane",
+    "today": "Dzisiaj",
+    "prevMonth": "Poprzedni miesiąc",
+    "nextMonth": "Następny miesiąc",
+    "monthNames": ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"],
+    "dayNamesShort": ["Pn", "Wt", "Śr", "Cz", "Pt", "So", "Nd"]
   }
 }

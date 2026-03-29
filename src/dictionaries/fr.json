@@ -266,5 +266,15 @@
   "whatsapp": {
     "chatMessage": "Bonjour ! Je suis intéressé par vos propriétés de location de luxe à Tenerife.",
     "ariaLabel": "Discutez avec nous sur WhatsApp"
+  },
+  "calendar": {
+    "title": "Disponibilité",
+    "available": "Disponible",
+    "booked": "Réservé",
+    "today": "Aujourd'hui",
+    "prevMonth": "Mois précédent",
+    "nextMonth": "Mois suivant",
+    "monthNames": ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+    "dayNamesShort": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"]
   }
 }

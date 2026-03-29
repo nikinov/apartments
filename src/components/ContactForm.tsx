@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { CONTACT_WHATSAPP } from "@/lib/constants";
 
 interface FormData {
   name: string;
@@ -111,8 +112,24 @@ export default function ContactForm({ dict, propertyTitle }: ContactFormProps) {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Build WhatsApp message with form data
+    const lines = [
+      formData.message,
+      "",
+      `---`,
+      `${t.nameLabel}: ${formData.name}`,
+      `${t.emailLabel}: ${formData.email}`,
+    ];
+    if (formData.phone) lines.push(`${t.phoneLabel}: ${formData.phone}`);
+    if (formData.checkIn) lines.push(`${t.checkInLabel}: ${formData.checkIn}`);
+    if (formData.checkOut) lines.push(`${t.checkOutLabel}: ${formData.checkOut}`);
+    lines.push(`${t.guestsLabel}: ${formData.guests}`);
+
+    const waUrl = `https://wa.me/${CONTACT_WHATSAPP}?text=${encodeURIComponent(lines.join("\n"))}`;
+
+    // Small delay for UX feedback, then open WhatsApp
+    await new Promise((resolve) => setTimeout(resolve, 600));
+    window.open(waUrl, "_blank", "noopener,noreferrer");
 
     setIsSubmitting(false);
     setIsSuccess(true);

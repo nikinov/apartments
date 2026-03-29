@@ -266,5 +266,15 @@
   "whatsapp": {
     "chatMessage": "Hallo! Ik ben geïnteresseerd in uw luxe huurwoningen op Tenerife.",
     "ariaLabel": "Chat met ons via WhatsApp"
+  },
+  "calendar": {
+    "title": "Beschikbaarheid",
+    "available": "Beschikbaar",
+    "booked": "Geboekt",
+    "today": "Vandaag",
+    "prevMonth": "Vorige maand",
+    "nextMonth": "Volgende maand",
+    "monthNames": ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
+    "dayNamesShort": ["Ma", "Di", "Wo", "Do", "Vr", "Za", "Zo"]
   }
 }

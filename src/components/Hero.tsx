@@ -144,9 +144,9 @@ export default function Hero({ dict, locale }: HeroProps) {
 
       {/* Bottom gradient fade into page content */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-32"
+        className="absolute bottom-0 left-0 right-0 h-48"
         style={{
-          background: "linear-gradient(to top, var(--background) 0%, transparent 100%)",
+          background: "linear-gradient(to top, var(--color-navy) 0%, rgba(12, 27, 51, 0.6) 40%, transparent 100%)",
         }}
         aria-hidden="true"
       />
