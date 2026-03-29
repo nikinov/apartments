@@ -35,15 +35,15 @@ export default async function HomePage({
 
       <Hero dict={dict} locale={locale} />
 
-      {/* Navy-to-white transition from hero */}
+      {/* Navy-to-sand transition from hero */}
       <div
         className="h-24 -mt-1"
-        style={{ background: "linear-gradient(to bottom, var(--color-navy) 0%, white 100%)" }}
+        style={{ background: "linear-gradient(to bottom, var(--color-navy) 0%, var(--color-sand) 100%)" }}
         aria-hidden="true"
       />
 
       {/* Featured Properties */}
-      <section className="py-20 px-4 bg-white" id="properties">
+      <section className="py-20 px-4" style={{ backgroundColor: "var(--color-sand)" }} id="properties">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p
@@ -64,64 +64,6 @@ export default async function HomePage({
             {featured.map((property) => (
               <PropertyCard key={property.slug} property={property} locale={locale} dict={dict} />
             ))}
-            {properties.length <= 1 && (
-              <>
-                <div className="rounded-2xl border-2 border-dashed border-gray-200 flex flex-col items-center justify-center p-12 text-center min-h-[400px]">
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mb-4"
-                    style={{ backgroundColor: "var(--color-sand)" }}
-                  >
-                    <svg
-                      className="w-8 h-8"
-                      style={{ color: "var(--color-gold)" }}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {dict.home.morePropertiesTitle}
-                  </h3>
-                  <p className="text-gray-500">
-                    {dict.home.morePropertiesDesc}
-                  </p>
-                </div>
-                <div className="rounded-2xl border-2 border-dashed border-gray-200 flex flex-col items-center justify-center p-12 text-center min-h-[400px]">
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mb-4"
-                    style={{ backgroundColor: "var(--color-sand)" }}
-                  >
-                    <svg
-                      className="w-8 h-8"
-                      style={{ color: "var(--color-gold)" }}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {dict.home.listPropertyTitle}
-                  </h3>
-                  <p className="text-gray-500">
-                    {dict.home.listPropertyDesc}
-                  </p>
-                </div>
-              </>
-            )}
           </div>
         </div>
       </section>
