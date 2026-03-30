@@ -98,7 +98,7 @@ export const properties: Property[] = [
       },
     ],
     pricing: {
-      perNight: 95,
+      perNight: 25,
       perWeek: 595,
       perMonth: 1800,
       currency: "EUR",
